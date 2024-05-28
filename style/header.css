@@ -1,0 +1,41 @@
+.header__box {
+  width: initial;
+  display: grid;
+  grid-template-columns: 17.68% 14.12% 48.25% 20%;
+  grid-template-rows: 61px;
+
+  grid-template-areas: 
+    "logo menu search icons";
+}
+
+.header__elem:nth-child(1) {
+  grid-area: logo;
+  background-color: red;
+  margin-right: 123px;
+}
+
+.header__elem:nth-child(2) {
+  grid-area: menu;
+  background-color: blue;
+  margin-right: 99px;
+}
+
+.header__elem:nth-child(3) {
+  grid-area: search;
+  background-color: yellow;
+  margin-right: 97px;
+}
+
+.header__elem:nth-child(4) {
+  grid-area: icons;
+  background-color: green;
+}
+
+.header__elem {
+  color: var(--1);
+  text-align: center;
+}
+
+.header__elem::after {
+  content: "test";
+}
