@@ -21,6 +21,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .sales__item:nth-child(1) {
@@ -65,4 +66,95 @@
 
 .sales__item:nth-child(11) {
   grid-area: tenth;
+}
+
+.sales__item_768 {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .sales__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 314px 217px 217px 217px 217px 418px;
+    gap: 24px;
+  
+    grid-template-areas: 
+      "main main main main"
+      "first second fourth fourth"
+      "third third fourth fourth"
+      "fifth fifth seventh eighth"
+      "sixth sixth seventh ninth"
+      "tenth tenth tenth tenth";
+  }
+  
+  .sales__item:nth-child(8) {
+    grid-area: tenth;
+  }
+  
+  .sales__item:nth-child(9) {
+    grid-area: seventh;
+  }
+  
+  .sales__item:nth-child(10) {
+    grid-area: eighth;
+  }
+  
+  .sales__item:nth-child(11) {
+    grid-area: ninth;
+  }
+}
+
+@media (max-width: 768px) {
+  .sales__list {
+    grid-template-columns: 140px 140px 220px 140px;
+    grid-template-rows: 280px 0px 60px 60px 60px 60px 60px 60px 60px 60px 337px;
+    gap: 20px;
+  
+    grid-template-areas: 
+      "main main main main"
+      ". . . ."
+      "first second fourth fourth"
+      "first second fourth fourth"
+      "third third fourth fourth"
+      "third third fourth fourth"
+      "fifth fifth fourth fourth"
+      "fifth fifth seventh eighth"
+      "sixth sixth seventh eighth"
+      "sixth sixth seventh ninth"
+      "tenth tenth tenth tenth";
+  }
+
+  .sales__item:nth-child(3) {
+    grid-area: second;
+  }
+
+  .sales__item:nth-child(9) img {
+    content: url('../img/8-th_768.jpg');
+  }
+
+  .sales__item:nth-child(11) img {
+    content: url('../img/10-th_768.jpg');
+  }
+}
+
+@media (max-width: 320px) {
+  .sales__list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 340px 130px 118px 280px 118px 118px 130px 130px 123px;
+  
+    grid-template-areas: 
+      "main main"
+      "first second"
+      "third third"
+      "fourth fourth"
+      "fifth fifth"
+      "sixth sixth"
+      "seventh eighth"
+      "seventh ninth"
+      "tenth tenth";
+  }
+
+  .sales__item:nth-child(1) img {
+    content: url('../img/main_320.png');
+  }
 }
