@@ -1,10 +1,10 @@
 .header__section {
   padding-top: 27px;
-  padding-bottom: 90px;
+  padding-bottom: 45px;
 }
 
 .header {
-  background-color: #fff;
+  background-color: var(--1);
 }
 
 .header__box {
@@ -103,6 +103,14 @@
   padding-bottom: 18px;
   padding-right: 105px;
 
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--4);
+}
+
+.header__elem_3__input::placeholder {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
