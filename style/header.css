@@ -8,9 +8,8 @@
 }
 
 .header__box {
-  width: initial;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 17.7% 14.15% 48.15% 20%;
   grid-template-rows: 61px;
 
   grid-template-areas: 
@@ -19,6 +18,7 @@
 
 .header__elem {
   align-self: center;
+  display: inline-block;
 }
 
 .header__elem_1 p {
@@ -140,7 +140,6 @@
 
 .header__elem_4__ul {
   display: flex;
-  gap: 70px; 
   align-items: end;
 }
 
@@ -148,6 +147,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 70px;
+}
+
+.header__elem_4__li-item:nth-last-child(1) {
+  margin-right: 0;
 }
 
 .header__elem_4__li-item__img_1 {
