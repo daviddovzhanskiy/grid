@@ -140,7 +140,8 @@
 
 .header__elem_4__ul {
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items:flex-end;
   gap: 70px;
 }
 
@@ -152,18 +153,18 @@
 
 .header__elem_4__li-item_1 {
   width: 69px;
-  height: 61px;
+  height: 55px;
 }
 
 .header__elem_4__li-item_2 {
   position: relative;
   width: 63px;
-  height: 61px;
+  height: 58px;
 }
 
 .header__elem_4__li-item_3 {
   width: 82px;
-  height: 61px;
+  height: 56px;
 }
 
 .header__elem_4__li-item__img_1 {
